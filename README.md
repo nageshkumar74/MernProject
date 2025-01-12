@@ -20,3 +20,23 @@ This project showcases a product dashboard with data visualization. It includes 
    ```bash
    git clone https://github.com/nageshkumar74/MernProject
    cd project-name
+
+cd backend
+npm install
+npm run dev
+
+cd frontend
+npm install
+npm run dev
+## Open your Browser
+
+http://localhost:5173
+
+API Endpoints
+
+    POST /api/seed: Seeds the database with data.
+    GET /api/transactions: Fetches transactions.
+    GET /api/stats: Fetches sales statistics.
+    GET /api/barChart: Fetches price range data.
+    GET /api/pieChart: Fetches category distribution.
+    GET /api/combined: Fetches all data in a single response.
