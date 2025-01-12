@@ -32,13 +32,15 @@ npm run dev
 
 http://localhost:5173
 
-API Endpoints
 
-    GET /items - retrieve all items
-GET /items/q={search by description and title} - to search by description and title
-GET /items?month="By month" - filter according to month
-GET /items/piechart?month="Type month" - visualize items with the help of chart
-GET /items/combine?month="Type Month" - combine all api and return in one api POST /API/items - create a new item
+
+   API Endpoints
+POST /api/seed: Seeds the database with data.
+GET /api/transactions: Fetches transactions.
+GET /api/stats: Fetches sales statistics.
+GET /api/barChart: Fetches price range data.
+GET /api/pieChart: Fetches category distribution.
+GET /api/combined: Fetches all data in a single response. GET /items - retrieve all items
 
 Technology Stack
 react.js
