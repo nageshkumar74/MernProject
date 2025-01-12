@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'; 
-
-import { BarChart,Dropdown,PieChart,SearchField,Statastics,TransactionTable } from '../Components';
-
+import { BarChart, Dropdown, PieChart, SearchField, Statastics, TransactionTable } from '../Components';
 import { fetchCombined } from '../api/api';
 
 const Dashboard = () => {
@@ -21,7 +19,7 @@ const Dashboard = () => {
         <div className="p-6">
             <div className="flex justify-between mb-4">
                 <Dropdown selected={month} onChange={setMonth} />
-              
+                <SearchField value={search} onChange={setSearch} />
             </div>
 
             <Statastics stats={data.statistics} />
